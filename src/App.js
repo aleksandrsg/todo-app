@@ -8,13 +8,18 @@ import TodoList from './components/TodoList'
 function App() {
 
   const [inputText, setInputText] = useState('');
+  const [todos, setTodos] =useState([]);
 
   return (
     <div className="App">
      <header>
        <h1>Aleks Todo List</h1>
      </header>
-    <Form setInputText={setInputText}/>
+    <Form
+    setTodos={setTodos}
+    todos={todos}
+    inputText={inputText}
+    setInputText={setInputText}/>
     <TodoList />
     <p>{inputText}</p>
     </div>
