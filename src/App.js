@@ -20,8 +20,7 @@ function App() {
     todos={todos}
     inputText={inputText}
     setInputText={setInputText}/>
-    <TodoList />
-    <p>{inputText}</p>
+    <TodoList todos={todos} setTodos={setTodos}/>
     </div>
   );
 }
